@@ -149,4 +149,39 @@ p {
 }
 
 .card:hover {
-  transfo
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   FOOTER (FUNCIONA NO MOBILE)
+========================= */
+.footer {
+  background: #020617;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+  color: #cbd5f5;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .services {
+    padding: 3rem 0;
+  }
+}
