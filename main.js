@@ -10,23 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* FAQ */
-document.querySelectorAll(".faq-question").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const item = btn.parentElement;
-    item.classList.toggle("active");
-    const answer = btn.nextElementSibling;
-
-    if (item.classList.contains("active")) {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-    } else {
-      answer.style.maxHeight = null;
-    }
-  });
-});
-
-
-
   /* DRAG DO CARROSSEL */
   document.querySelectorAll(".services-carousel").forEach((carousel) => {
     let isDown = false;
@@ -57,5 +40,12 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
       const walk = (x - startX) * 1.2;
       carousel.scrollLeft = scrollLeft - walk;
     });
+  });
+});
+
+document.querySelectorAll(".faq-question").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".faq-item");
+    item.classList.toggle("active");
   });
 });
