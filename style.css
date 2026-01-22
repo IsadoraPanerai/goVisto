@@ -454,13 +454,4 @@ section:not(:first-of-type) {
   }
 }
 
-@media (max-width: 768px) {
-  .service-card:active,
-  .btn-contact:active {
-    transform: scale(0.97);
-  }
-}
-
-
-
 
